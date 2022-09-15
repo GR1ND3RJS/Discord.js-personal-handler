@@ -34,7 +34,7 @@ The event handler makes it easy to create folders and different events so all yo
 
 import Discord, {EmbedBuilder, ButtonBuilder} from 'discord.js';
 import {CommadFile} from '../evttypes';
-
+```
 export = {
     name: 'guildMemberAdd',
     callback: async(member //you do not need the : GuildMember, the type is already defined in the evttypes.ts file) => {
@@ -42,7 +42,7 @@ export = {
         member.send(`Welcome to the server!`)
     }
 } as CommandFile.EventOptions<'guildMemberAdd'>; //Make sure this text in here is the same as the event name!
-
+```
 4. Paste it into your file.ts
 5. Change the name to what you want the event to be
 6. Change the type name to what event you want it to be (you can find the event names here: https://discord.js.org/#/docs/main/stable/class/Client
