@@ -31,10 +31,10 @@ The event handler makes it easy to create folders and different events so all yo
 1. Create a folder called events (optional, helps with organization)
 2. Create a **file.ts** (name it. Ts is recommended so you can learn how the code is structured)
 3. Copy the example template from here:
-
+```
 import Discord, {EmbedBuilder, ButtonBuilder} from 'discord.js';
 import {CommadFile} from '../evttypes';
-```
+
 export = {
     name: 'guildMemberAdd',
     callback: async(member //you do not need the : GuildMember, the type is already defined in the evttypes.ts file) => {
